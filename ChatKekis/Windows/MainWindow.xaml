@@ -1,0 +1,35 @@
+﻿<Window x:Class="ChatKekis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatKekis"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+            <WrapPanel HorizontalAlignment="Center" Margin="0,10">
+                <TextBlock Text="Username" Margin="10" FontSize="18"/>
+                <TextBox x:Name="TxtLogin" FontSize="18" Width="200" Margin="10"/>
+            </WrapPanel>
+            <WrapPanel HorizontalAlignment="Center" Margin="0,10">
+                <TextBlock Text="Password" Margin="10" FontSize="18"/>
+                <PasswordBox x:Name="PsBPassword" FontSize="18" Width="200" Margin="10"/>
+            </WrapPanel>
+            <WrapPanel HorizontalAlignment="Center" Margin="0,10">
+                <Button x:Name="BtnOk" Content="Ok" Background="LightSkyBlue" Margin="0 0 30 0" Width="120" FontSize="18" Click="BtnOk_Click"/>
+                <Button x:Name="BtnCancel" Content="Canel" Background="White" Width="120" FontSize="18" Click="BtnCancel_Click"/>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>
